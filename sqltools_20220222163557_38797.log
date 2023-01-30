@@ -1,0 +1,30 @@
+22-02-22 16:36:05.3139800 pid:38797 tid:1 sqltools Critical: 0 : An unhandled exception occurred: System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types.
+Could not load file or assembly 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+Could not load file or assembly 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+Could not load file or assembly 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+Could not load file or assembly 'Microsoft.SqlServer.TransactSql.ScriptDom, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+Could not load file or assembly 'Microsoft.SqlServer.TransactSql.ScriptDom, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+Could not load file or assembly 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at System.Composition.Hosting.ContainerConfiguration.<>c.<WithAssemblies>b__16_0(Assembly a)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at System.Composition.TypedParts.TypedPartExportDescriptorProvider..ctor(IEnumerable`1 types, AttributedModelProvider attributeContext)
+   at System.Composition.Hosting.ContainerConfiguration.CreateContainer()
+   at Microsoft.SqlTools.Extensibility.ExtensionStore..ctor(Type contractType, Func`2 configure)
+   at Microsoft.SqlTools.Extensibility.ExtensionServiceProvider.EnsureExtensionStoreRegistered[T]()
+   at Microsoft.SqlTools.Extensibility.ExtensionServiceProvider.GetServicesImpl[T]()
+   at Microsoft.SqlTools.Extensibility.ServiceProviderBase.GetServices[T]()
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.InitializeHostedServices(RegisteredServiceProvider provider, IProtocolEndpoint host)
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.InitializeRequestHandlersAndServices(ServiceHost serviceHost, SqlToolsContext sqlToolsContext)
+   at Microsoft.SqlTools.ServiceLayer.HostLoader.CreateAndStartServiceHost(SqlToolsContext sqlToolsContext)
+   at Microsoft.SqlTools.ServiceLayer.Program.Main(String[] args)
+System.BadImageFormatException: Could not load file or assembly 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+File name: 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'
+System.BadImageFormatException: Could not load file or assembly 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+File name: 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'
+System.BadImageFormatException: Could not load file or assembly 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+File name: 'Microsoft.SqlServer.Smo, Version=16.200.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'
+System.BadImageFormatException: Could not load file or assembly 'Microsoft.SqlServer.TransactSql.ScriptDom, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'. The module was expected to contain an assembly manifest.
+File name: 'Microsoft.SqlServer.TransactSql.ScriptDom, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91'
+System.BadImageFormatException: Could not load file or assembly 'Microsoft.SqlServer.TransactSql.S
